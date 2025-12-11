@@ -6,7 +6,7 @@ export default function Volunteering() {
     return <CollapsableCard title="Volunteering" icon={<Globe />} >
         <ExperienceItem 
             title={<span> <a href='https://www.worldbirdsanctuary.org/' target="_blank">World Bird Sanctuary</a> </span>} period='May 24 - Aug 25' 
-            imgSrc="wbs.png" imgAlt="World Bird Sanctuary Logo"
+            imgSrc="wbs.gif" imgAlt="World Bird Sanctuary Logo"
             imgRef="https://www.worldbirdsanctuary.org/"
         >
            I fed and cared for injured birds of prey and helped with site maintenance.
