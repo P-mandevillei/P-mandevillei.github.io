@@ -37,7 +37,7 @@ export default function ExperienceItem({title, period="", imgSrc, imgAlt, imgRef
             >
                 <h2 className="margin-top-btm">{title}</h2>
                 {
-                    period && <p> {period} </p>
+                    period && <p className="period"> {period} </p>
                 }
                 <p className="intro-text"> {children} </p>
             </Col>

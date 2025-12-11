@@ -1,11 +1,13 @@
-import { FileText, Mail } from "lucide-react";
+import { FileText, Mail, Moon, Sun } from "lucide-react";
 import { BsGithub } from "react-icons/bs";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import useWindowDim from "../hooks/useWindowDim";
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import ClickableIcon from "./ClickableIcon";
 import WaveInView from "./WaveInView";
+import { ThemeContext } from "../contexts/themeContext";
+import ThemedCard from "./ThemedCard";
 
 export default function Intro() {
     const screenDim = useWindowDim();
@@ -17,7 +19,17 @@ export default function Intro() {
         }
     }, [screenDim]);
 
-    return <Card className="dark-card">
+    const [theme, setTheme] = useContext(ThemeContext);
+
+    return <ThemedCard style={{position: 'relative'}}>
+        <div 
+            style={{position: 'absolute', display: 'flex', top: 0, right: 0, margin: 10}} 
+            onClick={() => {setTheme(theme === 'dark'? 'light' : 'dark')}}
+        >
+            <ClickableIcon desc={theme==='dark'? 'dark mode' : 'light mode'} placement="bottom" >
+                {theme === 'dark'? <Moon /> : <Sun />}
+            </ClickableIcon>
+        </div>
         <Container>
             <Row>
                 <Col sm={12} md={6} lg={4} ref={colRef}>
@@ -55,5 +67,5 @@ export default function Intro() {
                 </Col>
             </Row>
         </Container>
-    </Card>
+    </ThemedCard>
 }

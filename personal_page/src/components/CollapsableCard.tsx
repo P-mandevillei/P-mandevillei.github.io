@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronRight } from "lucide-react";
 import { Card } from "react-bootstrap";
+import ThemedCard from "./ThemedCard";
 
 type CollapsableCardProps = {
     title: string,
@@ -13,13 +14,13 @@ type CollapsableCardProps = {
 export default function CollapsableCard({ title, icon, children, defaultOpen = true }: CollapsableCardProps) {
     const [isOpen, setIsOpen] = useState(defaultOpen);
 
-    return <Card className="dark-card">
+    return <ThemedCard>
         <Card.Header
             className="card-header"
             onClick={() => setIsOpen(!isOpen)}
         >
             <div className="d-flex align-items-center gap-3">
-                <span className="bright-blue">{icon}</span>
+                <span className="icon-color">{icon}</span>
                 <h5 className="m-0 fw-bold text-uppercase even-spacing">{title}</h5>
             </div>
             {isOpen ? <ChevronDown size={20} /> : <ChevronRight size={20} />}
@@ -38,5 +39,5 @@ export default function CollapsableCard({ title, icon, children, defaultOpen = t
             </motion.div>
             )}
         </AnimatePresence>
-    </Card>
+    </ThemedCard>
 };
