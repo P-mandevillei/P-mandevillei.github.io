@@ -7,7 +7,7 @@ import { BsGithub } from "react-icons/bs";
 export default function Research() {
     return <CollapsableCard title="Research" icon={<Beaker />} >
         <ExperienceItem 
-            title={<span>Comparative Microbiome Analysis at <a href='https://sites.wustl.edu/losos/' target="_blank">Losos Lab</a> & <a href='https://mallott-lab.github.io/' target="_blank">Mallot Lab</a> </span>}
+            title={<span>Comparative Microbiome Analysis at <a href='https://sites.wustl.edu/losos/' target="_blank">Losos Lab</a> & <a href='https://mallott-lab.github.io/' target="_blank">Mallott Lab</a> </span>}
             period='Aug 25 - Present' 
             imgSrc="anole.png" imgAlt="A phylogenetic tree of Anoles"
             imgRef="https://www.semanticscholar.org/paper/Phenotypic-convergence-is-not-mirrored-at-the-level-Corbett-Detig-Russell/8b829601756c368941c639fc26a2273e1f3ec5c2"
