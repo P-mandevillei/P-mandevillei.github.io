@@ -59,7 +59,7 @@ export default function Intro() {
                         </h1>
                     </WaveInView>
                     <p className="intro-text">
-                        {"Welcome! I am a junior at WashU "}
+                        {"Welcome! I am a junior at WashU on the pre-medical track "}
                         {"double majoring in Computer Science and Biology (Genomics and Computational Biology Specialization) with a minor in Chemistry. "}
                         {"My research philosophy is hybrid: I believe the next generation of medical breakthroughs will come from those how can handle both the pipette "}
                         <i><b>and</b></i>
