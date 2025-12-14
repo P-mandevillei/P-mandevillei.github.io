@@ -8,19 +8,13 @@ export default function Research() {
     return <CollapsableCard title="Research" icon={<Beaker />} >
         <ExperienceItem 
             title={<span>Comparative Microbiome Analysis at <a href='https://sites.wustl.edu/losos/' target="_blank">Losos Lab</a> & <a href='https://mallott-lab.github.io/' target="_blank">Mallott Lab</a> </span>}
-            period='Aug 25 - Present' 
+            period='Aug 25 - Present'
+            header="The Question: Is evolution deterministic on the microscopic level?"
             imgSrc="anole.png" imgAlt="A phylogenetic tree of Anoles"
             imgRef="https://www.semanticscholar.org/paper/Phenotypic-convergence-is-not-mirrored-at-the-level-Corbett-Detig-Russell/8b829601756c368941c639fc26a2273e1f3ec5c2"
         >
-            Interested in the extent of evolutionary determinism on the microscopic level, we studied the microbiome compositions of the <i>Anolis</i> lizards in the Greater Antilles, an example system of adaptive radiation, looking for phylogenetic and ecological relationships. Bioinformatics tools including <a href="https://qiime2.org/" target="_blank">QIIME2</a> and <a href='https://github.com/picrust/picrust2' target="_blank">PICRUSt2</a> are utilized for analysis.
-        </ExperienceItem>
-
-        <ExperienceItem 
-            title={<span> Research Associate at <a href='https://www.stlouischildrens.org/' target="_blank">St. Louis Children's Hospital</a> </span>} period='Jan 25 - Aug 25' 
-            imgSrc="slch.jpg" imgAlt="The building of St. Louis Children's Hospital"
-            imgRef=""
-        >
-            As part of the competitive <a href='https://pemrap.wustl.edu/' target="_blank">PEMRAP</a> program at WashU, I screened and recruited around 300 participants to multiple clinical studies, which leveraged the emergency room as a lens by which to understand the broader distribution of health resources for certain populations like non-English speakers or pediatric psychiatric patients.
+            We use the <i>Anolis</i> lizards of the Greater Antilles, a classic system of adaptive radiation, to investigate host-microbiome co-evolution.
+            I manage the full pipeline, from extracting 16S rRNA genes from samples to amplicon bioinformatics analyses using <a href="https://qiime2.org/" target="_blank">QIIME2</a> and <a href='https://github.com/picrust/picrust2' target="_blank">PICRUSt2</a> to map phylogenetic and functional relationships.
         </ExperienceItem>
 
         <ExperienceItem 
@@ -29,22 +23,33 @@ export default function Research() {
                     <BsGithub size={20} />
                 </ClickableIcon>
                 <span>
-                    UNC49 Molecular Dynamics at <a href='https://scholar.google.com/citations?user=HES_B60AAAAJ&hl=en&inst=2230987035966559800' target="_blank">Held Lab</a> 
+                    Structural Biology at <a href='https://scholar.google.com/citations?user=HES_B60AAAAJ&hl=en&inst=2230987035966559800' target="_blank">Held Lab</a> 
                 </span>
             </span>}
+            header="The Question: How do protein structural dynamics influence function?"
             period='Aug 24 - May 25' 
             imgSrc="md.gif" imgAlt="Trajectory of UNC49 ion channel"
             imgRef=""
         >
-            We used <a href='https://www.gromacs.org/' target="_blank">GROMACS</a> to run molecular dynamics simulations on the redox opening of the GABA<sub>A</sub> receptor UNC49 by oxidation of Cys238. The trajectories were analyzed with <a href='https://www.mdanalysis.org/'>MDAnalysis</a>. We developed an algorithm to group the pentameric protein correctly in the tilted triclinic box, and characterized multiple geometrics and energetics properties relevant to the description of channel opening.
+            <ul>
+                <li> 
+                    <b>Project 1 (Molecular Dynamics):</b>
+                    We used <a href='https://www.gromacs.org/' target="_blank">GROMACS</a> to simulate the redox opening of the GABA<sub>A</sub> receptor UNC49 by oxidation of Cys238. I developed a Python algorithm to correct pentameric protein grouping in tilted triclinic boxes and characterized the geometric and energetic landscape of receptor opening.
+                </li>
+                <li>
+                    <b>Project 2 (CryptoCache):</b>
+                    Built a pipeline to map solvent exposure dynamics across the entire <a href='https://www.rcsb.org/' target="_blank">Protein Data Bank</a>, correlating crypticity with post-translational modifications.
+                </li>
+            </ul>
         </ExperienceItem>
 
         <ExperienceItem 
-            title={<span> CryptoCache Project at <a href='https://scholar.google.com/citations?user=HES_B60AAAAJ&hl=en&inst=2230987035966559800' target="_blank">Held Lab</a> </span>} period='Jan 24 - May 24' 
-            imgSrc="crypticity.png" imgAlt="A machine learning workflow diagram of crypticity prediction"
+            title={<span> Clinical Research Associate at <a href='https://www.stlouischildrens.org/' target="_blank">St. Louis Children's Hospital</a> </span>} period='Jan 25 - Aug 25' 
+            imgSrc="slch.jpg" imgAlt="The building of St. Louis Children's Hospital"
             imgRef=""
+            header="The Context: Understanding health resource distribution and the patient behind the data"
         >
-            We characterized residue crypticity, a solvent exposure dynamics property, across all deposited structures in the <a href='https://www.rcsb.org/' target="_blank">PDB</a>. We explored the correlations of crypticity with features like post-translational modifications, and explored protein domains with varying residue dynamics. Later in my <i><b><a href='https://zzhenglab.github.io/ai4chem/intro.html' target="_blank">AI for Chemistry</a></b></i> course, we developed a transformer encoder & random forest classifier for crypticity prediction.
+            As part of the competitive <a href='https://pemrap.wustl.edu/' target="_blank">PEMRAP</a> program at WashU, I screened and recruited over 300 participants for studies including psychiatric resource availabilities and non-English speakers patient experiences. This experience gave me a firsthand look at the clinical reality that drives translational research.
         </ExperienceItem>
 
     </CollapsableCard>

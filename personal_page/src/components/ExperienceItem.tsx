@@ -9,9 +9,12 @@ type props = {
   imgAlt: string,
   imgRef?: string,
   putImgLeft?: boolean,
+  header?: string,
   children: React.ReactNode
 }
-export default function ExperienceItem({title, period="", imgSrc, imgAlt, imgRef="", putImgLeft=true, children}: props) {
+export default function ExperienceItem({
+    title, period="", imgSrc, imgAlt, imgRef="", putImgLeft=true, header="", children
+}: props) {
 
     const screenDim = useWindowDim();
     const colRef = useRef<HTMLDivElement>(null);
@@ -33,12 +36,13 @@ export default function ExperienceItem({title, period="", imgSrc, imgAlt, imgRef
                 }
             </Col>
             <Col xs={12} md={{span:8, order: putImgLeft? 'last':'first'}} lg={{span:9, order: putImgLeft? 'last':'first'}}
-                className="d-flex flex-column justify-content-center align-items-start"
+                className="d-flex flex-column align-items-start text-start"
             >
                 <h2 className="margin-top-btm">{title}</h2>
                 {
-                    period && <p className="period"> {period} </p>
+                    period && <p className="period"><i>{period}</i></p>
                 }
+                { header && <h3 className="header"> {header} </h3>}
                 <p className="intro-text"> {children} </p>
             </Col>
         </Row>

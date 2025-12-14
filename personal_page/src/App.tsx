@@ -37,8 +37,8 @@ function App() {
     <ThemeContext.Provider value={[theme, setTheme]}>
       <Intro />
       <Education />
-      <Research />
       <Projects />
+      <Research />
       <Volunteering />
       <Beyond />
     </ThemeContext.Provider>

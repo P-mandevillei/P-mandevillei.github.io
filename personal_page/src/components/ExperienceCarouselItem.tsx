@@ -38,7 +38,7 @@ export default function ExperienceCarouselItem({title, period="", imgSrc, imgAlt
             >
                 <h2 className="margin-top-btm">{title}</h2>
                 {
-                    period && <p> {period} </p>
+                    period && <p className="period"><i>{period}</i></p>
                 }
                 <p className="intro-text"> {children} </p>
             </Col>

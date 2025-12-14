@@ -5,7 +5,7 @@ import ClickableIcon from "./ClickableIcon";
 import { BsGithub } from "react-icons/bs";
 
 export default function Projects() {
-    return <CollapsableCard title="Projects" icon={<Cpu />} >
+    return <CollapsableCard title="Featured Projects" icon={<Cpu />} >
         <ExperienceItem 
             title={
                 <span className="center-row gap-1"> 
@@ -15,14 +15,15 @@ export default function Projects() {
                     <ClickableIcon href="https://2pflim-neuron-segmentation.netlify.app/" desc="Website">
                         <AppWindow size={20} />
                     </ClickableIcon>
-                    Geometric Cell Segmentation from 2pFLIM Images
+                    Neuron Segmentation from 2pFLIM Imaging
                 </span>
             }
+            period="React, TypeScript, Prototyping in Mathematica"
             putImgLeft={false}
             imgSrc="segmentation.png" imgAlt="Segmentation mask of a neuron soma in 2pFLIM images"
             imgRef=""
         >
-            As the final project for the course <i><b>Geometric Computing in Biomedicine</b></i>, I built a <a href='https://2pflim-neuron-segmentation.netlify.app/' target="_blank">website</a> for segmenting neuron somas from 2pFLIM images, implementing classical geometric algorithms including morphological operations, marching squares contouring, PCA and SVD-ICP alignment and Laplacian deformation.
+            As the final project for the course <i><b>Geometric Computing in Biomedicine</b></i>, I built a <a href='https://2pflim-neuron-segmentation.netlify.app/' target="_blank">website</a> for batch segmentation of neuron somas from 2pFLIM images, drastically reducing manual labor. It implements classical geometric algorithms including morphological operations, marching squares contouring, PCA and SVD-ICP alignment and Laplacian deformation.
         </ExperienceItem>
 
         <ExperienceItem 
@@ -34,11 +35,26 @@ export default function Projects() {
                     Coarse-Grain Molecular Dynamics of a Polymer Chain
                 </span>
             }
+            period="Python (NumPy, pandas, SciPy, matplotlib, seaborn)"
             putImgLeft={false}
             imgSrc="chem_4050.gif" imgAlt="Molecular dynamics simulation of a polymer chain"
             imgRef=""
         >
-            In the course <i><b><a href='https://wexlergroup.github.io/comp-prob-solv/' target="_blank">Computational Problem Solving in the Chemical Sciences</a></b></i>, I implemented the Monte Carlo Metropolis algorithm on a grand canonical ensemble to analyze surface adsorption in Haber-Bosch ammonia synthesis, and performed coarse-grain MD simulation to characterize the phase transition of a polymer chain.
+            In the course <i><b><a href='https://wexlergroup.github.io/comp-prob-solv/' target="_blank">Computational Problem Solving in the Chemical Sciences</a></b></i>, I implemented the Monte Carlo Metropolis algorithm from scratch on a grand canonical ensemble to analyze surface adsorption in Haber-Bosch ammonia synthesis, and built a coarse-grain MD simulation in plain Python to characterize the phase transition of a polymer chain.
+        </ExperienceItem>
+
+        <ExperienceItem 
+            title={<span className="center-row gap-1"> 
+                <ClickableIcon href="https://github.com/P-mandevillei/CHEM-5080_Project" desc="GitHub Repo">
+                    <BsGithub size={20} />
+                </ClickableIcon>
+                Protein Crypticity Prediction with Machine Learning 
+            </span>} 
+            period="Python (PyTorch, scikit-learn)"
+            imgSrc="crypticity.png" imgAlt="A machine learning workflow diagram of crypticity prediction"
+            imgRef="" putImgLeft={false}
+        >
+            In my <i><b><a href='https://zzhenglab.github.io/ai4chem/intro.html' target="_blank">AI for Chemistry</a></b></i> course, my teammate <a href='https://github.com/matthew-rao' target="_blank">Matthew Rao</a> and I developed a machine learning pipeline to predict cryptic sites -- protein residues that are hidden in ground state but become exposed upon ligand binding. We trained a custom hybrid model fusing a transformer encoder with a random forest classifier and analyzed feature importance with SHapley Additive exPlanations.
         </ExperienceItem>
 
         <ExperienceItem 
@@ -56,7 +72,7 @@ export default function Projects() {
                     Full-Stack Web Projects
                 </span>
             }
-            putImgLeft={false}
+            putImgLeft={false} period="HTML/CSS/JS, PHP, Python, MySQL, MongoDB"
             imgSrc="web.png" imgAlt="A screenshot of my website https://protect-okeeheelee.netlify.app/"
             imgRef="https://protect-okeeheelee.netlify.app/"
         >

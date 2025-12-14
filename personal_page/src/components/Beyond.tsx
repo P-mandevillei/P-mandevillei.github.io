@@ -1,31 +1,34 @@
 import { BsBalloon, BsGithub } from "react-icons/bs";
 import CollapsableCard from "./CollapsableCard";
-import ExperienceItem from "./ExperienceItem";
 import ExperienceCarouselItem from "./ExperienceCarouselItem";
 import ClickableIcon from "./ClickableIcon";
 
 export default function Beyond() {
-    return <CollapsableCard title="Beyond Academics" icon={<BsBalloon size={24} />} >
-        <ExperienceItem 
-            title={<span> Question Writing Committee Co-Chair </span>} period='Aug 23 - Present' 
-            imgSrc="wuct.jpg" imgAlt="WashU Chemistry Tournament Logo"
-            imgRef="https://wuct.w3spaces.com/about.html" putImgLeft={false}
-        >
-            I am the QW committee co-chair at <b><i>WashU Stem Education Association (WUSEA)</i></b>, where we host annual chemistry tournaments <a href='https://wuct.w3spaces.com/index.html' target="_blank">(WUCT)</a> for high-school students. It's harder than you'd think to write chemistry questions that are both approachable and challenging!
-        </ExperienceItem>
+    return <CollapsableCard title="Beyond the Lab" icon={<BsBalloon size={24} />} >
 
         <ExperienceCarouselItem
-            title={<span> Aquariums, Vivariums, Carnivorous Plants, etc. </span>}
+            title={<span> Aquariums, Vivariums, Carnivorous Plants, and More! </span>}
             imgSrc={["pitcher.jpeg", 'reef.jpeg', 'texas_horned_lizard.JPG', 'tropheus.jpeg']}
-            imgAlt={["Australian Pitchers", "Reef Tank", "Texas Horned Lizard", "Tropheus sp. 'black'"]}
-            putImgLeft={false}
+            imgAlt={["Australian Pitchers", "Reef Tank", "Texas Horned Lizard", "Tropheus sp. 'black' baby"]}
         >
-            I'm a nature enthusiast crazy for all kinds of critters and have been an aquarist for over 10 years! Some of my proudest achievements include breeding the vampire crabs and the Tanganyikan cichlids <i>Tropheus</i>. I am dedicated to demystifying with science the prevalent "just-do-it-like-this-and-everything-will-be-fine"s in this hobby: visit <a href='https://a-nature-sanctuary.netlify.app/en'>my blog website</a>
-            {' '}
-            <ClickableIcon href="https://github.com/P-mandevillei/A_Nature_Sanctuary" desc="GitHub Repo">
-                <BsGithub />
-            </ClickableIcon>
-            {' '} for useful tips and tools!
+            <p>
+                I'm a nature enthusiast with over a decade of experience as an aquarist and vivarium designer, building mini ecosystems in glass tanks, PVC thermostatic chambers and even retrofitted fridges.
+            </p>
+            <ul>
+                <li>
+                    <b>Breeding Projects: </b> I successfully bred vampire crabs (<i>Geosesarma</i>), Tanganyikan cichlids (<i>Tropheus</i>, <i>Neolamprologus</i>), and Cuban snails (<i>Caracolus</i>) among others, under tailored water chemistry and environmental parameters. I've also been a bladderwort (<i>Utricularia</i>) propagator.
+                </li>
+                <li>
+                    <b>The Science:</b> I run blogs dedicated to replacing the "just do it this way" folklore of the hobby with scientific principles, covering water chemistry, engineering laws, microbiology and more. Most contents are hosted on a Chinese platform;
+                    however, I am working on building <a href='https://a-nature-sanctuary.netlify.app/en'>my own website</a>
+                    {' '}
+                    <ClickableIcon href="https://github.com/P-mandevillei/A_Nature_Sanctuary" desc="GitHub Repo">
+                        <BsGithub />
+                    </ClickableIcon>
+                    {' '}
+                    which serves articles and useful tools.
+                </li>
+            </ul>
             
         </ExperienceCarouselItem>
     </CollapsableCard>

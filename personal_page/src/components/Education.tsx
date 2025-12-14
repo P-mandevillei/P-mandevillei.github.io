@@ -43,10 +43,16 @@ export default function Education() {
                 <h2> Skills </h2>
                 <ul>
                     <li>
-                        <b>Programming:</b> Python, R, C, C++, Java, HTML/CSS/JavaScript, PHP, SQL, Mathematica
+                        <b>Programming:</b> Python, R, C/C++, Java, SQL, Mathematica
                     </li>
                     <li>
-                        <b>Wet Lab:</b> Basic Biology and Chemistry Lab Operations
+                        <b>Web Development:</b> HTML/CSS/JS (Typescript), PHP, React, Flask, MongoDB
+                    </li>
+                    <li>
+                        <b>Packages & Tools:</b> MDAnalysis, scikit-learn, PyTorch, PyMOL, QIIME2, PICRUSt2
+                    </li>
+                    <li>
+                        <b>Lab Techniques:</b> PCR, GelElectrophoresis, DNAExtraction, Titration, Chromatography
                     </li>
                     <li>
                         <b>Languages: </b> Chinese (native), English (fluent)
