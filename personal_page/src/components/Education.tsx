@@ -46,7 +46,7 @@ export default function Education() {
                         <b>Programming:</b> Python, R, C/C++, Java, SQL, Mathematica
                     </li>
                     <li>
-                        <b>Web Development:</b> HTML/CSS/JS (Typescript), PHP, React, Flask, MongoDB
+                        <b>Web Development:</b> HTML/CSS/JS (TypeScript), PHP, React, Flask, MongoDB
                     </li>
                     <li>
                         <b>Packages & Tools:</b> MDAnalysis, scikit-learn, PyTorch, PyMOL, QIIME2, PICRUSt2
