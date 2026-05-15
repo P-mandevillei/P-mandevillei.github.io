@@ -25,8 +25,8 @@ export default function Education() {
                     </Col>
                     <Col xs={9} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                         <h3> Washington University in St. Louis </h3>
-                        <i> B.S., Computer Science and Biology </i>
-                        <p> Expected: May 2027 </p>
+                        <i> B.S., Computer Science and Biology (May 2027) </i>
+                        <p> GPA 4.0/4.0 (1 of 34 in engineering class) </p>
                     </Col>
                 </Row>
                 <Row className="margin-top-btm">
@@ -35,6 +35,7 @@ export default function Education() {
                     </Col>
                     <Col xs={9} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                         <h3> Shanghai High School </h3>
+                        <p> Gaokao: top 0.1% in city (49/54,000) </p>
                     </Col>
                 </Row>
                 </Container>
@@ -43,19 +44,19 @@ export default function Education() {
                 <h2> Skills </h2>
                 <ul>
                     <li>
-                        <b>Programming:</b> Python, R, C/C++, Java, SQL, Mathematica
+                        <b>Programming:</b> Python, R, C/C++, CUDA, Java, SQL, Mathematica
                     </li>
                     <li>
-                        <b>Web Development:</b> HTML/CSS/JS (TypeScript), PHP, React, Flask, MongoDB
+                        <b>Web Development:</b> HTML/CSS/JS(TS), PHP, React, Flask, MongoDB
                     </li>
                     <li>
                         <b>Packages & Tools:</b> MDAnalysis, scikit-learn, PyTorch, PyMOL, QIIME2, PICRUSt2
                     </li>
                     <li>
-                        <b>Lab Techniques:</b> PCR, GelElectrophoresis, DNAExtraction, Titration, Chromatography
+                        <b>Lab Techniques:</b> PCR, Gel Electrophoresis, DNA Extraction, Chromatography
                     </li>
                     <li>
-                        <b>Languages: </b> Chinese (native), English (fluent)
+                        <b>Languages: </b> Mandarin & Wu Chinese (native), English (advanced)
                     </li>
                 </ul>
             </Col>

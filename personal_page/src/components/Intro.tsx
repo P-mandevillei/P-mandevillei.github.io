@@ -33,7 +33,7 @@ export default function Intro() {
         <Container>
             <Row>
                 <Col sm={12} md={6} lg={4} ref={colRef}>
-                    <img alt="A headshot of Charlie Li" src='headshot.png' width={colWidth*0.9>200? 200 : colWidth*0.9} style={{borderRadius: '50%'}} className="margin" />
+                    <img alt="A headshot of Charlie Li" src='headshot.webp' width={colWidth*0.9>200? 200 : colWidth*0.9} style={{borderRadius: '50%'}} className="margin" />
                     <h1> Charlie Li </h1>
                     <h2> Computational Biologist & Developer </h2>
                     <h3><i> <a href="https://washu.edu/">Washington University in St. Louis</a> | Class of 2027 </i></h3>
@@ -59,11 +59,11 @@ export default function Intro() {
                         </h1>
                     </WaveInView>
                     <p className="intro-text">
-                        {"Welcome! I am a junior at WashU on the pre-medical track "}
-                        {"double majoring in Computer Science and Biology (Genomics and Computational Biology Specialization) with a minor in Chemistry. "}
-                        {"My research philosophy is hybrid: I believe the next generation of medical breakthroughs will come from those how can handle both the pipette "}
-                        <i><b>and</b></i>
-                        {" the command line. My work spans from wet-lab evolutionary biology to building custom machine learning architectures for protein analysis."}
+                        Welcome! I am a rising senior at WashU on the pre-medical track 
+                        double majoring in Computer Science and Biology (Genomics and Computational Biology Specialization) with a minor in Chemistry. 
+                        My research philosophy is hybrid: I believe the next generation of medical breakthroughs will come from those how can handle both the pipette 
+                        <i><b> and </b></i>
+                        the command line. My work spans from wet-lab evolutionary biology to building custom machine learning architectures for protein analysis.
                     </p>
                 </Col>
             </Row>

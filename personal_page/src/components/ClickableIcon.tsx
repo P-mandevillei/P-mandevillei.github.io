@@ -13,9 +13,10 @@ export default function ClickableIcon({
 }: props) {
     if (href) {
         return <motion.span
-            whileHover = {{ scale: 1.2 }}
-            transition = {{ type: 'spring', stiffness: 400, damping: 10 }}
+            whileHover = {{scale: 1.2}}
+            transition = {{type: 'spring', stiffness: 400, damping: 10}}
             className='selectable'
+            style = {{display: 'inline-block', margin: '0 0.2em'}}
         >
             {desc? 
                 <OverlayTrigger placement={placement} overlay={<Tooltip>{desc}</Tooltip>} >
@@ -32,9 +33,10 @@ export default function ClickableIcon({
         </motion.span>
     } else {
         return <motion.span
-            whileHover = {{ scale: 1.2 }}
-            transition = {{ type: 'spring', stiffness: 400, damping: 10 }}
+            whileHover = {{scale: 1.2}}
+            transition = {{type: 'spring', stiffness: 400, damping: 10}}
             className='selectable'
+            style = {{margin: '0 0.2em'}}
         >
             {desc? 
                 <OverlayTrigger placement={placement} overlay={<Tooltip>{desc}</Tooltip>} >

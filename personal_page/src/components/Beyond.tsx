@@ -8,7 +8,7 @@ export default function Beyond() {
 
         <ExperienceCarouselItem
             title={<span> Aquariums, Vivariums, Carnivorous Plants, and More! </span>}
-            imgSrc={["pitcher.jpeg", 'reef.jpeg', 'texas_horned_lizard.JPG', 'tropheus.jpeg']}
+            imgSrc={["pitcher.jpeg", 'reef.jpeg', 'texas_horned_lizard.webp', 'tropheus.jpeg']}
             imgAlt={["Australian Pitchers", "Reef Tank", "Texas Horned Lizard", "Tropheus sp. 'black' baby"]}
         >
             <p>
@@ -16,10 +16,12 @@ export default function Beyond() {
             </p>
             <ul>
                 <li>
-                    <b>Breeding Projects: </b> I successfully bred vampire crabs (<i>Geosesarma</i>), Tanganyikan cichlids (<i>Tropheus</i>, <i>Neolamprologus</i>), and Cuban snails (<i>Caracolus</i>) among others, under tailored water chemistry and environmental parameters. I've also been a bladderwort (<i>Utricularia</i>) propagator.
+                    <b>Breeding Projects: </b> I successfully bred vampire crabs (<i>Geosesarma</i>), Tanganyikan cichlids (<i>Tropheus</i>, <i>Neolamprologus</i>), and Cuban snails (<i>Caracolus</i>) among others, under tailored water chemistry and environmental parameters.
+                    I've also propagated several species of bladderworts (<i>Utricularia</i>) and shared them among hobbyists.
                 </li>
                 <li>
-                    <b>The Science:</b> I run blogs dedicated to replacing the "just do it this way" folklore of the hobby with scientific principles, covering water chemistry, engineering laws, microbiology and more. Most contents are hosted on a Chinese platform;
+                    <b>The Science:</b> I run blogs dedicated to replacing the "just do it this way" folklore of the hobby with scientific principles, covering water chemistry, engineering laws, microbiology and more. 
+                    Most contents are hosted on WeChat (search for official account "<i>A Nature Sanctuary</i>");
                     however, I am working on building <a href='https://a-nature-sanctuary.netlify.app/en'>my own website</a>
                     {' '}
                     <ClickableIcon href="https://github.com/P-mandevillei/A_Nature_Sanctuary" desc="GitHub Repo">
